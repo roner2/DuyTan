@@ -1,0 +1,12 @@
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\bin\Debug\QLySinhVien.exe.config
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\bin\Debug\QLySinhVien.exe
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\bin\Debug\QLySinhVien.pdb
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.csprojAssemblyReference.cache
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.Properties.Resources.resources
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.csproj.GenerateResource.cache
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.csproj.CoreCompileInputs.cache
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.exe
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.pdb
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_DangNhap.resources
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.QLySinhVien_Box_1.resources
+C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_GiaiPTBat2.resources

@@ -32,8 +32,7 @@ namespace QLyBanHang
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            this.con.Open();
-            string text = "SELECT COUNT IdDM FROM tbDANHMUC";           
+            this.con.Open();          
             String SQL = " insert into tbDANHMUC(TenDM, IdDMCHA)"
                 + " VALUES (N'" + txt_TenDM.Text + "'," + txt_MaDM.Text + ")";
             SqlCommand cmd = new SqlCommand(SQL, this.con);
