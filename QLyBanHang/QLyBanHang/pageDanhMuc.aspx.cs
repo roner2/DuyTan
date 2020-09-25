@@ -26,7 +26,7 @@ namespace QLyBanHang
         protected void Page_Load(object sender, EventArgs e)
         {
             con = new SqlConnection();
-            con.ConnectionString= @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\nhatm\source\repos\DuyTan\QLyBanHang\QLyBanHang\App_Data\QLyBanHang.mdf; Integrated Security = True";
+            con.ConnectionString= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Duy Tan\DuyTan\QLyBanHang\QLyBanHang\App_Data\QLyBanHang.mdf;Integrated Security=True";
             LoadDANHMUC();
         }
 

@@ -34,16 +34,17 @@ namespace QLySinhVien
         {
             if (txt_HeSoA.Text == "" || txt_HeSoB.Text == "" || txt_HeSoC.Text == "")
             {
-                MessageBox.Show("Thieu gia tri A or B or C");                
+                MessageBox.Show("Thieu gia tri A or B or C");
             }
             else
-                MessageBox.Show("Sai Tên Đăng Nhập Hoặc Mật Khẩu");
+                PTBat2();
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
             this.txt_HeSoA.Clear();
             this.txt_HeSoB.Clear();
+            this.txt_HeSoC.Clear();
         }
 
         private void frm_DangNhap_Load(object sender, EventArgs e)
@@ -58,27 +59,37 @@ namespace QLySinhVien
                 Application.Exit();
         }
         private void PTBat2()
-        {
-            double a = double.Parse(this.txt_HeSoA.Text);
-            double b = double.Parse(this.txt_HeSoB.Text);
-            double c = double.Parse(this.txt_HeSoC.Text);
-            double x1,x2
-            double delta = b * b - 4 * a * c;
-            if (delta < 0)
-                return.LoaiN = 0;
-            else if (delta == 0)
+        {            
+            float a = float.Parse(this.txt_HeSoA.Text);
+            float b = float.Parse(this.txt_HeSoB.Text);            
+            float c = float.Parse(this.txt_HeSoC.Text);
+            float delta = (b / 2) * (b / 2) - a * c;
+            MessageBox.Show("Phương trình nhập vào là:\n "+a+" x*x + "+b+"x + "+c+" = 0", "thong bao", MessageBoxButtons.YesNo,MessageBoxIcon.Question);          
+            switch (delta < 0)
             {
-                return.LoaiN = 1;
-                return string x1 = -b / 2 * a;
+                case true:
+                    MessageBox.Show("Chương trình vô nghiệm");
+                    this.txt_DapAn.Text = "Chương trình vô nghiệm";
+                    break;
+                case false:
+                    switch (delta == 0)
+                    {
+                        case true:
+                            float x = (-b / 2) / a;
+                            MessageBox.Show("Phương trình có nghiệm kép x1 = x2 = "+ x);
+                            this.txt_DapAn.Text = "Phương trình nhập vào là:\n " + a + " x* x +" + b + "x + " + c + " = 0" + "Phương trình có nghiệm kép x1 = x2 = " + x;
+                            break;
+                        default:
+                            double x1 = 0;
+                            double x2 = 0;
+                            x1 = ((-b / 2) - Math.Sqrt(delta)) / a;
+                            x2 = ((-b / 2) + Math.Sqrt(delta)) / a;
+                            MessageBox.Show("Phương trình có 2 nghiệm phân biệt: " + "\nx1 = " + x1 + "\nx2 = " + x2);
+                            this.txt_DapAn.Text = "Phương trình nhập vào là: "+a+" x* x +"+b+"x + "+c+" = 0" + "\nPhương trình có 2 nghiệm phân biệt: " + "\nx1 = " + x1 + "\nx2 = " + x2;
+                            break;
+                    }
+                    break;
             }
-            else
-            {
-                cNghiem.LoaiN = 2;
-                cNghiem.x1 = -b - Math.Sqrt(delta) / 2 * a;
-                cNghiem.x2 = -b + Math.Sqrt(delta) / 2 * a;
-            }
-            return cNghiem;
         }
-    }
     }
 }

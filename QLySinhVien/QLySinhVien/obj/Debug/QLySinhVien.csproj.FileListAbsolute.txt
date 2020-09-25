@@ -10,3 +10,15 @@ C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.pdb
 C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_DangNhap.resources
 C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.QLySinhVien_Box_1.resources
 C:\Users\nhatm\source\repos\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_GiaiPTBat2.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.csprojAssemblyReference.cache
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_GiaiPTBat2.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_DangNhap.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.QLySinhVien_Box_1.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.Properties.Resources.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.csproj.GenerateResource.cache
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.csproj.CoreCompileInputs.cache
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.exe
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.pdb
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\bin\Debug\QLySinhVien.exe.config
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\bin\Debug\QLySinhVien.exe
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\bin\Debug\QLySinhVien.pdb

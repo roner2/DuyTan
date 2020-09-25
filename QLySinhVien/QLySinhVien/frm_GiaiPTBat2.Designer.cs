@@ -37,6 +37,7 @@
             this.btn_thoat = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_HeSoC = new System.Windows.Forms.TextBox();
+            this.txt_DapAn = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_MatKhau
@@ -78,7 +79,7 @@
             // 
             // btn_DangNhap
             // 
-            this.btn_DangNhap.Location = new System.Drawing.Point(201, 186);
+            this.btn_DangNhap.Location = new System.Drawing.Point(109, 295);
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Size = new System.Drawing.Size(115, 50);
             this.btn_DangNhap.TabIndex = 9;
@@ -88,7 +89,7 @@
             // 
             // btn_Reset
             // 
-            this.btn_Reset.Location = new System.Drawing.Point(343, 186);
+            this.btn_Reset.Location = new System.Drawing.Point(319, 295);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(115, 50);
             this.btn_Reset.TabIndex = 10;
@@ -98,7 +99,7 @@
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(491, 186);
+            this.btn_thoat.Location = new System.Drawing.Point(537, 295);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(115, 50);
             this.btn_thoat.TabIndex = 11;
@@ -123,12 +124,21 @@
             this.txt_HeSoC.Size = new System.Drawing.Size(187, 20);
             this.txt_HeSoC.TabIndex = 12;
             // 
+            // txt_DapAn
+            // 
+            this.txt_DapAn.Location = new System.Drawing.Point(228, 146);
+            this.txt_DapAn.Multiline = true;
+            this.txt_DapAn.Name = "txt_DapAn";
+            this.txt_DapAn.Size = new System.Drawing.Size(291, 119);
+            this.txt_DapAn.TabIndex = 14;
+            // 
             // frm_GiaiPTBat2
             // 
             this.AcceptButton = this.btn_DangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txt_DapAn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_HeSoC);
             this.Controls.Add(this.btn_thoat);
@@ -157,5 +167,6 @@
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_HeSoC;
+        private System.Windows.Forms.TextBox txt_DapAn;
     }
 }
