@@ -35,3 +35,6 @@ C:\DuyTan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.csproj.CoreCompil
 C:\DuyTan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.exe
 C:\DuyTan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.pdb
 C:\DuyTan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_ListBox.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_ListBox.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_NhapBac.resources
+D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_Bac.resources

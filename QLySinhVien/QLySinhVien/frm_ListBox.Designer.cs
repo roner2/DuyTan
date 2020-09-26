@@ -131,6 +131,7 @@
             this.Controls.Add(this.btn_1);
             this.Controls.Add(this.lib_A);
             this.Name = "frm_ListBox";
+            this.Load += new System.EventHandler(this.frm_ListBox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
