@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="webMaster.master.cs" Inherits="QLyBanHang.webMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 92px;
+        }
+        .auto-style2 {
+            width: 793px;
+            height: 95px;
+        }
+        .auto-style3 {
+            height: 92px;
+            width: 315px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table style="width:100%;">
+            <tr>
+                <td colspan="3">
+                    <img alt="" class="auto-style2" src="IMG/5f44a7398c0cdf460857e744_img-image.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style1" style="vertical-align: top"></td>
+                <td class="auto-style3" style="vertical-align: top">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style1" style="vertical-align: top"></td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

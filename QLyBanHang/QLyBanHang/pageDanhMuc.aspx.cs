@@ -14,13 +14,15 @@ namespace QLyBanHang
         XULYDULIEU xuLy;
         public void LoadDANHMUC()
         {
-            String SQL = "select * from tbDANHMUC";            
+            String SQL = "select * from tbDANHMUC";
+            String SQL_1 = "SELECT COUNT (*) FROM tbDANHMUC";
             this.GridView1.DataSource = xuLy.bang(SQL);
+            this.lb_Ma.Text = Convert.ToString(xuLy.countDB(SQL_1)+1);
             this.GridView1.DataBind();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            xuLy = new XULYDULIEU();
+            xuLy = new XULYDULIEU(this.Page);
             LoadDANHMUC();
         }
 
