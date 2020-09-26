@@ -12,12 +12,12 @@
             height: 92px;
         }
         .auto-style2 {
-            width: 793px;
-            height: 95px;
+            width: 794px;
+            height: 98px;
         }
         .auto-style3 {
             height: 92px;
-            width: 315px;
+            width: 120px;
         }
     </style>
 </head>
@@ -31,8 +31,11 @@
                     <img alt="" class="auto-style2" src="IMG/5f44a7398c0cdf460857e744_img-image.jpg" /></td>
             </tr>
             <tr>
-                <td class="auto-style1" style="vertical-align: top"></td>
                 <td class="auto-style3" style="vertical-align: top">
+                    <asp:Repeater ID="Repeater1" runat="server">
+                    </asp:Repeater>
+                </td>
+                <td class="auto-style1" style="vertical-align: top">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
                 </td>
