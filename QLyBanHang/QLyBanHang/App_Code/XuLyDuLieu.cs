@@ -7,10 +7,10 @@ using System.Data.SqlClient;
 
 namespace QLyBanHang.App_Code
 {
-    public class XuLyDuLieu
+    public class XULYDULIEU
     {
         SqlConnection con;
-        public XuLyDuLieu()
+        public XULYDULIEU()
         {
             con = new SqlConnection();
             con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\nhatm\source\repos\DuyTan\QLyBanHang\QLyBanHang\App_Data\QLyBanHang.mdf;Integrated Security=True";
@@ -37,7 +37,7 @@ namespace QLyBanHang.App_Code
         public int thucThiSQL(String SQL)
         {
             this.moKetNoi();
-            SqlCommand CMD = new SqlCommand();
+            SqlCommand CMD = new SqlCommand(SQL, this.con);
             int result = CMD.ExecuteNonQuery();
             this.dongKetNoi();
             return result;

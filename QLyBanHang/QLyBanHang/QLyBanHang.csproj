@@ -75,7 +75,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\XuLyDuLieu.cs" />
+    <Compile Include="App_Code\XULYDULIEU.cs" />
     <Compile Include="pageDanhMuc.aspx.cs">
       <DependentUpon>pageDanhMuc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

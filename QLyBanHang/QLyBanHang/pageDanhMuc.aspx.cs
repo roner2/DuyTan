@@ -2,42 +2,33 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
-using System.Data;
+using QLyBanHang.App_Code;
 
 namespace QLyBanHang
-{
+{    
     public partial class pageDanhMuc : System.Web.UI.Page
     {
-        SqlConnection con;
+        XULYDULIEU xuLy;
         public void LoadDANHMUC()
         {
-            con.Open();
-            String SQL = "select * from tbDANHMUC";
-            SqlDataAdapter ADP = new SqlDataAdapter(SQL, con);
-            DataSet ds = new DataSet();
-            ADP.Fill(ds);
-            this.GridView1.DataSource = ds.Tables[0];
+            String SQL = "select * from tbDANHMUC";            
+            this.GridView1.DataSource = xuLy.bang(SQL);
             this.GridView1.DataBind();
-            con.Close();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection();
-            con.ConnectionString= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DuyTan\DuyTan\QLyBanHang\QLyBanHang\App_Data\QLyBanHang.mdf;Integrated Security=True";
+            xuLy = new XULYDULIEU();
             LoadDANHMUC();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {
-            this.con.Open();          
+        {         
             String SQL = " insert into tbDANHMUC(TenDM, IdDMCHA)"
                 + " VALUES (N'" + txt_TenDM.Text + "'," + txt_MaDM.Text + ")";
-            SqlCommand cmd = new SqlCommand(SQL, this.con);
-            cmd.ExecuteNonQuery();
-            this.con.Close();
+            int kq = this.xuLy.thucThiSQL(SQL);
             LoadDANHMUC();
         }
 
