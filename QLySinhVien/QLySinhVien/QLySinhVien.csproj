@@ -58,6 +58,12 @@
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListBox.Designer.cs">
+      <DependentUpon>frm_ListBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_QLSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListBox.resx">
+      <DependentUpon>frm_ListBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QLSinhVien.resx">
       <DependentUpon>frm_QLSinhVien.cs</DependentUpon>

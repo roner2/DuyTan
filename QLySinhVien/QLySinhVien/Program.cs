@@ -16,7 +16,7 @@ namespace QLySinhVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_GiaiPTBat2());
+            Application.Run(new frm_ListBox());
         }
     }
 }
