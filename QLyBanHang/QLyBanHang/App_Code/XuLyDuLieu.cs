@@ -37,7 +37,8 @@ namespace QLyBanHang.App_Code
             ADP.Fill(tb);
             this.dongKetNoi();
             return tb;
-        }public int countDB(String SQL)
+        }
+        public int countDB(String SQL)
         {
             this.moKetNoi();
             SqlCommand ADP = new SqlCommand(SQL, this.con);
