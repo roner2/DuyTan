@@ -19,7 +19,7 @@ namespace QLyBanHang
             tbLop.Columns.Add(clMaLop);
             tbLop.Columns.Add("TenLop", typeof(string));
             DataRow rowLop = tbLop.NewRow();
-            rowLop[0] = 1;
+            rowLop["MaLop"] = 1;
             rowLop[1] = "IS382E";
             tbLop.Rows.Add(rowLop);
             ds.Tables.Add(tbLop);
@@ -31,12 +31,12 @@ namespace QLyBanHang
             DataRow rowSV = tbSV.NewRow();
             rowSV[0] = 1;
             rowSV[1] = "Nguyen Van A";
-            rowSV[2] = 1;
+            rowSV["MaLop"] = 1;
             tbSV.Rows.Add(rowSV);
             rowSV = tbSV.NewRow();
             rowSV[0] = 2;
             rowSV[1] = "Nguyen Van Teo";
-            rowSV[2] = 1;
+            rowSV["MaLop"] = 1;
             tbSV.Rows.Add(rowSV);
             ds.Tables.Add(tbSV);
 
@@ -48,7 +48,11 @@ namespace QLyBanHang
 
         protected void btn_button1_Click(object sender, EventArgs e)
         {
+            ds.Tables[1].DefaultView.RowFilter = "MaSV=" + txt_nhap.Text;
 
+            DataTable tbTam = ds.Tables[1].DefaultView.ToTable();
+            this.GridView1.DataSource = tbTam;
+            this.GridView1.DataBind();
         }
     }
 }
