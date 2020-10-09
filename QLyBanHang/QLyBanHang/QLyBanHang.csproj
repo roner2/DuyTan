@@ -72,7 +72,9 @@
       <DependentUpon>QLyBanHang.mdf</DependentUpon>
     </Content>
     <Content Include="IMG\5f44a7398c0cdf460857e744_img-image.jpg" />
+    <Content Include="IMG\samsung-galaxy-s8.jpg" />
     <Content Include="pageDanhMuc.aspx" />
+    <Content Include="pageDanhSachSanPham.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +85,13 @@
     </Compile>
     <Compile Include="pageDanhMuc.aspx.designer.cs">
       <DependentUpon>pageDanhMuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageDanhSachSanPham.aspx.cs">
+      <DependentUpon>pageDanhSachSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageDanhSachSanPham.aspx.designer.cs">
+      <DependentUpon>pageDanhSachSanPham.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
