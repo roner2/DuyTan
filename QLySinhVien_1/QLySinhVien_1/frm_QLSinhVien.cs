@@ -111,5 +111,23 @@ namespace QLySinhVien
         {
 
         }
+
+        private void pic_Hinh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog openHinh = new OpenFileDialog();
+                openHinh.Title = "moi ban chon hinh anh";
+                openHinh.Filter = "JPG|*.jpg|PNG|*.png|Tat ca|*.*";
+                if (openHinh.ShowDialog() = DialogResult.OK)
+                {
+                    pic_Hinh.Image = Image.FromFile(openHinh.FileName);
+                }                    
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Dinh dang khong dung");
+            }
+        }
     }
 }

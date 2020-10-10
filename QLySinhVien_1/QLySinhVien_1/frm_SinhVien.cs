@@ -16,5 +16,36 @@ namespace QLySinhVien_1
         {
             InitializeComponent();
         }
+
+        private void pic_Hinh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog openHinh = new OpenFileDialog();
+                openHinh.Title = "Moi ban nhap hinh";
+                openHinh.Filter = "JPG|*.jpg|PNG|*.png|tat ca|*.*";
+                if (openHinh.ShowDialog() == DialogResult.OK)
+                    pic_Hinh.Image = Image.FromFile(openHinh.FileName);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("sai");
+            }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
