@@ -71,14 +71,25 @@
     <Content Include="App_Data\QLyBanHang_log.ldf">
       <DependentUpon>QLyBanHang.mdf</DependentUpon>
     </Content>
+    <Content Include="CSS\customcss.css" />
+    <Content Include="shop.ico" />
     <Content Include="IMG\5f44a7398c0cdf460857e744_img-image.jpg" />
+    <Content Include="IMG\iphone-xs-gold.jpg" />
     <Content Include="IMG\samsung-galaxy-s8.jpg" />
+    <Content Include="pageChiTiet.aspx" />
     <Content Include="pageDanhMuc.aspx" />
     <Content Include="pageDanhSachSanPham.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\XULYDULIEU.cs" />
+    <Compile Include="pageChiTiet.aspx.cs">
+      <DependentUpon>pageChiTiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageChiTiet.aspx.designer.cs">
+      <DependentUpon>pageChiTiet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pageDanhMuc.aspx.cs">
       <DependentUpon>pageDanhMuc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

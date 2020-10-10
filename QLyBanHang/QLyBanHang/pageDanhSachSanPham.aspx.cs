@@ -15,6 +15,11 @@ namespace QLyBanHang
         {
             xuly = new XULYDULIEU(this.Page);
             String SQL = "select * from tbSANPHAM";
+            if(Request.QueryString.Get("IdDM")!= null)
+            {
+                string IDDM = Request.QueryString.Get("IdDm");
+                SQL += " where IdDM =" + IDDM;
+            }
             this.DataList1.DataSource = xuly.bang(SQL);
             this.DataList1.DataBind();
         }
