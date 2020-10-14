@@ -5,8 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Data;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QLySinhVien_1
 {
@@ -44,6 +46,13 @@ namespace QLySinhVien_1
         }
 
         private void btn_add_Click(object sender, EventArgs e)
+        {
+            String ketnoi = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\DuyTan\DuyTan\QLySinhVien_1\QLySinhVien_1\data\QLySinhVien.mdf; Integrated Security = True";
+            SqlConnection conn = new SqlConnection(ketnoi);
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

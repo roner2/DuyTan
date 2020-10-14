@@ -32,8 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_add = new System.Windows.Forms.Button();
             this.pic_Hinh = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_Lop = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.rdo_Nam = new System.Windows.Forms.RadioButton();
             this.rdo_Nu = new System.Windows.Forms.RadioButton();
@@ -48,9 +51,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_MaSV = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_dem = new System.Windows.Forms.Button();
+            this.lb_dem = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Hinh)).BeginInit();
@@ -83,12 +87,26 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.lb_dem);
+            this.panel4.Controls.Add(this.btn_dem);
+            this.panel4.Controls.Add(this.btn_xoa);
+            this.panel4.Controls.Add(this.btn_update);
             this.panel4.Controls.Add(this.btn_add);
             this.panel4.Controls.Add(this.pic_Hinh);
             this.panel4.Location = new System.Drawing.Point(356, 19);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(330, 252);
             this.panel4.TabIndex = 18;
+            // 
+            // btn_add
+            // 
+            this.btn_add.Location = new System.Drawing.Point(30, 22);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(75, 46);
+            this.btn_add.TabIndex = 2;
+            this.btn_add.Text = "Them";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // pic_Hinh
             // 
@@ -106,7 +124,7 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_Lop);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txt_DiaChi);
@@ -121,6 +139,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(330, 252);
             this.panel1.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label7.Location = new System.Drawing.Point(68, 76);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(28, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Lop:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // txt_Lop
+            // 
+            this.txt_Lop.Location = new System.Drawing.Point(112, 73);
+            this.txt_Lop.Name = "txt_Lop";
+            this.txt_Lop.Size = new System.Drawing.Size(187, 20);
+            this.txt_Lop.TabIndex = 16;
+            this.txt_Lop.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel2
             // 
@@ -261,35 +299,42 @@
             this.dataGridView1.Size = new System.Drawing.Size(706, 130);
             this.dataGridView1.TabIndex = 4;
             // 
-            // label7
+            // btn_update
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label7.Location = new System.Drawing.Point(19, 76);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 13);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Tên Sinh Viên:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.btn_update.Location = new System.Drawing.Point(30, 126);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(75, 46);
+            this.btn_update.TabIndex = 3;
+            this.btn_update.Text = "Cap Nhap";
+            this.btn_update.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // btn_xoa
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.btn_xoa.Location = new System.Drawing.Point(30, 74);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(75, 46);
+            this.btn_xoa.TabIndex = 4;
+            this.btn_xoa.Text = "Xoa";
+            this.btn_xoa.UseVisualStyleBackColor = true;
             // 
-            // btn_add
+            // btn_dem
             // 
-            this.btn_add.Location = new System.Drawing.Point(28, 94);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 46);
-            this.btn_add.TabIndex = 2;
-            this.btn_add.Text = "Them";
-            this.btn_add.UseVisualStyleBackColor = true;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            this.btn_dem.Location = new System.Drawing.Point(30, 178);
+            this.btn_dem.Name = "btn_dem";
+            this.btn_dem.Size = new System.Drawing.Size(75, 46);
+            this.btn_dem.TabIndex = 5;
+            this.btn_dem.Text = "dem";
+            this.btn_dem.UseVisualStyleBackColor = true;
+            // 
+            // lb_dem
+            // 
+            this.lb_dem.AutoSize = true;
+            this.lb_dem.Location = new System.Drawing.Point(30, 231);
+            this.lb_dem.Name = "lb_dem";
+            this.lb_dem.Size = new System.Drawing.Size(38, 13);
+            this.lb_dem.TabIndex = 6;
+            this.lb_dem.Text = "Dem : ";
+            this.lb_dem.Click += new System.EventHandler(this.label8_Click);
             // 
             // frm_SinhVien
             // 
@@ -305,6 +350,7 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Hinh)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -338,7 +384,11 @@
         private System.Windows.Forms.TextBox txt_MaSV;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Lop;
         private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_xoa;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_dem;
+        private System.Windows.Forms.Label lb_dem;
     }
 }

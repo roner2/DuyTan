@@ -38,3 +38,5 @@ C:\DuyTan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_ListBox.resou
 D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_ListBox.resources
 D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_NhapBac.resources
 D:\Duy Tan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_Bac.resources
+C:\DuyTan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_Bac.resources
+C:\DuyTan\DuyTan\QLySinhVien\QLySinhVien\obj\Debug\QLySinhVien.frm_NhapBac.resources
