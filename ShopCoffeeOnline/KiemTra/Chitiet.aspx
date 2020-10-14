@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Repeater ID="Repeater2" runat="server">
+    <asp:Repeater ID="Repeater2" runat="server" OnItemCommand="Repeater2_ItemCommand">
         <ItemTemplate>
             <table border="1" style="width:100%;">
                 <tr>
@@ -25,7 +25,7 @@
                             <asp:ListItem>9</asp:ListItem>
                             <asp:ListItem>10</asp:ListItem>        
                         </asp:DropDownList>
-                        <asp:Button ID="btn_GioHang" runat="server" Text="Gio Hang" />
+                        <asp:Button ID="btn_ThemGioHang" runat="server" Text="Them vao Gio Hang" />
                      </td>
                 </tr>
             </table>            

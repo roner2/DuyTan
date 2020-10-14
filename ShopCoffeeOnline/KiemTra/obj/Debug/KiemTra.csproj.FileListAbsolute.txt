@@ -59,3 +59,13 @@ D:\Duy Tan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.csproj.CoreCompileI
 D:\Duy Tan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.csproj.CopyComplete
 D:\Duy Tan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.dll
 D:\Duy Tan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.pdb
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\bin\KiemTra.dll.config
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\bin\KiemTra.dll
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\bin\KiemTra.pdb
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.csprojAssemblyReference.cache
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.csproj.CoreCompileInputs.cache
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.csproj.CopyComplete
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.dll
+C:\DuyTan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\KiemTra.pdb

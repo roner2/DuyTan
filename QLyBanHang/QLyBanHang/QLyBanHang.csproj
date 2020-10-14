@@ -79,6 +79,7 @@
     <Content Include="pageChiTiet.aspx" />
     <Content Include="pageDanhMuc.aspx" />
     <Content Include="pageDanhSachSanPham.aspx" />
+    <Content Include="ViewShop.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +106,13 @@
       <DependentUpon>pageDanhSachSanPham.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewShop.aspx.cs">
+      <DependentUpon>ViewShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewShop.aspx.designer.cs">
+      <DependentUpon>ViewShop.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

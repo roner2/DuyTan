@@ -29,5 +29,20 @@ namespace KiemTra
                 //    drl_SoLuong.Items.Add(i.ToString());
             }
         }
+        
+        protected void btn_ThemGioHang_Click(object sender, EventArgs e)
+        {
+            DataTable dt;
+            if (Session["gio" == null])
+            {
+                dt = taoGio();
+            }
+        }
+
+        protected void Repeater2_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+        }
+
     }
 }

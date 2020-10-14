@@ -32,14 +32,14 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style1">
-                    <table border="1" style="width:100%;">
+                    <table border="1" valign="top" style="vertical-align: top;width:100%;">
                         <tr>
                             <td>Danh Mục Đồ Uống</td>
                         </tr>
-                        <asp:Repeater ID="Repeater1" runat="server" EnableTheming="True" OnItemCommand="Repeater1_ItemCommand1">
+                        <asp:Repeater ID="Repeater1" runat="server" EnableTheming="True">
                              <ItemTemplate>
                                  <tr>
-                                     <td class="auto-style2">
+                                     <td class="auto-style2" >
                                          <a href="DanhSach.aspx?MADANHMUC=<%# Eval("MADANHMUC") %>" style="text-transform: uppercase; font-size: 30px">
                                          <%# Eval("TENDANHMUC") %>
                                          </a>

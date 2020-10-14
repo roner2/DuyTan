@@ -13,5 +13,10 @@
     </asp:Repeater>
     <asp:DropDownList ID="drl_SoLuong" runat="server">
     </asp:DropDownList>
-    <asp:Button ID="btn_GioHang" runat="server" Text="Gio Hang" />
+    <asp:Button ID="btn_GioHang" runat="server" Text="Gio Hang" OnClick="btn_GioHang_Click" style="width: 82px" />
+&nbsp;&nbsp;&nbsp;
+    <asp:HyperLink ID="btn_xemchitiet" runat="server">
+        <a href="VietShop.aspx">Xem Chi Tiet</a>
+
+    </asp:HyperLink>
 </asp:Content>

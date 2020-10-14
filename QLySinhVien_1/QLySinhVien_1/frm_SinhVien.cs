@@ -49,6 +49,8 @@ namespace QLySinhVien_1
         {
             String ketnoi = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\DuyTan\DuyTan\QLySinhVien_1\QLySinhVien_1\data\QLySinhVien.mdf; Integrated Security = True";
             SqlConnection conn = new SqlConnection(ketnoi);
+            conn.Open();
+            String SQL = "INSERT INTO SinhVien VALUES ('"+txt_MaSV+"',N'"+txt_TenSV+ "',N'"+txt_TenSV+"')"
 
         }
 
