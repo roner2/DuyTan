@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="webMaster.master.cs" Inherits="KiemTra.webMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 431px;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+        .auto-style3 {
+            width: 260px;
+        }
+        .auto-style4 {
+            width: 1200px;
+        }
+        .auto-style5 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style1">
+                    <table border="1" style="width:100%;">
+                        <tr>
+                            <td>Danh Mục Đồ Uống</td>
+                        </tr>
+                        <asp:Repeater ID="Repeater1" runat="server" EnableTheming="True" OnItemCommand="Repeater1_ItemCommand1">
+                             <ItemTemplate>
+                                 <tr>
+                                     <td class="auto-style2">
+                                         <a href="DanhSach.aspx?MADANHMUC=<%# Eval("MADANHMUC") %>" style="text-transform: uppercase; font-size: 30px">
+                                         <%# Eval("TENDANHMUC") %>
+                                         </a>
+                                     </td>
+                                 </tr>
+                             </ItemTemplate>
+                        </asp:Repeater>                               
+                    </table>
+                </td>
+                <td class="auto-style4">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    <table class="auto-style5">
+                        <tr>
+                            <td class="auto-style3">UserName</td>
+                            <td>
+                                <asp:TextBox ID="TextBox1" runat="server" Width="185px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style3">PassWork</td>
+                            <td>
+                                <asp:TextBox ID="TextBox2" runat="server" Width="185px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style2" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" Text="Login" Width="201px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

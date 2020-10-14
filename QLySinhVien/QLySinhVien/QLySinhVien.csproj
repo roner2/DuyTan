@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_Bac.cs">
+    <Compile Include="Bac\frm_Bac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Bac.Designer.cs">
+    <Compile Include="Bac\frm_Bac.Designer.cs">
       <DependentUpon>frm_Bac.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_GiaiPTBat2.cs">
@@ -70,10 +70,10 @@
     <Compile Include="frm_ListBox.Designer.cs">
       <DependentUpon>frm_ListBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_NhapBac.cs">
+    <Compile Include="Bac\frm_NhapBac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_NhapBac.Designer.cs">
+    <Compile Include="Bac\frm_NhapBac.Designer.cs">
       <DependentUpon>frm_NhapBac.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_QLSinhVien.cs">
@@ -84,7 +84,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_Bac.resx">
+    <EmbeddedResource Include="Bac\frm_Bac.resx">
       <DependentUpon>frm_Bac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_GiaiPTBat2.resx">
@@ -96,7 +96,7 @@
     <EmbeddedResource Include="frm_ListBox.resx">
       <DependentUpon>frm_ListBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_NhapBac.resx">
+    <EmbeddedResource Include="Bac\frm_NhapBac.resx">
       <DependentUpon>frm_NhapBac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QLSinhVien.resx">

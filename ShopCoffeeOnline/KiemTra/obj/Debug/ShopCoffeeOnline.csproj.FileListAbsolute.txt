@@ -1,0 +1,4 @@
+D:\Duy Tan\DuyTan\KiemTra\KiemTra\obj\Debug\ShopCoffeeOnline.csprojAssemblyReference.cache
+D:\Duy Tan\DuyTan\KiemTra\KiemTra\obj\Debug\ShopCoffeeOnline.csproj.CoreCompileInputs.cache
+D:\Duy Tan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\ShopCoffeeOnline.csprojAssemblyReference.cache
+D:\Duy Tan\DuyTan\ShopCoffeeOnline\KiemTra\obj\Debug\ShopCoffeeOnline.csproj.CoreCompileInputs.cache
